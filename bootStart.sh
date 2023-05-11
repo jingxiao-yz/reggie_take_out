@@ -24,7 +24,7 @@ echo 准备打开数据库
 service mysql start
 
 echo 准备从Git仓库拉取最新代码
-cd /testt/reggie_take_out/
+cd /test/reggie_take_out/
 
 echo 开始从Git仓库拉取最新代码
 git pull
