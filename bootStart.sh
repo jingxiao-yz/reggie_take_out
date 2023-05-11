@@ -24,13 +24,12 @@ echo 准备打开数据库
 service mysql start
 
 echo 准备从Git仓库拉取最新代码
-cd /testt/reggie/reggie_take_out
+cd /testt/reggie_take_out/
 
 echo 开始从Git仓库拉取最新代码
 git pull
 echo 代码拉取完成
 
-cd /testt/reggie/reggie_take_out
 echo 开始打包
 output=`mvn clean install -T 1C -Dmaven.test.skip=true -Dmaven.compile.fork=true`
 
